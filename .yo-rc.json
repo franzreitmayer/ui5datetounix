@@ -1,0 +1,21 @@
+{
+  "generator-template-ui5-project": {
+    "projectname": "conv",
+    "namespaceUI5": "eu.reitmayer.ui5",
+    "platform": "Static webserver",
+    "viewtype": "XML",
+    "ui5libs": "Content delivery network (OpenUI5)",
+    "newdir": true,
+    "namespaceURI": "eu/reitmayer/ui5",
+    "opa5pos": [
+      "Main"
+    ],
+    "opa5Journeys": [
+      "Main"
+    ],
+    "uimodules": [
+      "uimodule"
+    ],
+    "setupCompleted": true
+  }
+}
