@@ -3,7 +3,7 @@ sap.ui.define([], function() {
     return {
         toUnixDate: function(sDate) {
             console.log(typeof(sDate));
-            return (sDate.getTime() / 1000).toFixed(0);
+            return (sDate.getTime()).toFixed(0);
         }
     };
 });
