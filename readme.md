@@ -1,6 +1,6 @@
 # conv
 
-Insert the purpose of this project and some interesting infos here
+Simple utility UI5 application to convert UI5 (JavaScript) date and datetime values to unix format, used at oData v2 mock data.
 
 ## Credits
 

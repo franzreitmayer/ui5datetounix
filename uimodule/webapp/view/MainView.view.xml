@@ -1,11 +1,55 @@
  <mvc:View controllerName="eu.reitmayer.ui5.conv.controller.MainView"
   displayBlock="true"
   xmlns="sap.m"
+  xmlns:form="sap.ui.layout.form"
   xmlns:mvc="sap.ui.core.mvc">
   <App id="idAppControl" >
     <pages>
       <Page title="{i18n>title}">
-        <content></content>
+        <content>
+          <form:SimpleForm
+            title="Input Date">
+          <Label text="Date" />
+          <DatePicker dateValue="{/simpleDate}" />
+        </form:SimpleForm>
+        <form:SimpleForm title="Date Output">
+          <Label text="Short date" /> <Text text="{
+            path : '/simpleDate',
+            type: 'sap.ui.model.type.Date',
+            formatOptions: {
+              style: 'short'
+            }
+        }" />
+          <Label text="Unix Date"/>
+          <Text text="{
+            path: '/simpleDate',
+            formatter: '.formatter.toUnixDate'
+          }" />
+        </form:SimpleForm>
+        <form:SimpleForm
+          title="DateTime Input">
+          <Label text="Date Time" />
+          <DateTimePicker value="{
+            path: '/dateTime',
+            type: 'sap.ui.model.type.DateTime'}" />
+        </form:SimpleForm>
+        <form:SimpleForm
+          title="DateTime Output">
+          <Label text="Sort DateTime" />
+          <Text text="{
+            path: '/dateTime',
+            type: 'sap.ui.model.type.DateTime',
+            formatOptions: {
+              style: 'short'
+              }
+          }" />
+          <Label text="Unix DateTime" />
+          <Text text="{
+            path: '/dateTime',
+            formatter: '.formatter.toUnixDate'
+          }" />
+      </form:SimpleForm>
+        </content>
       </Page>
     </pages>
   </App>
