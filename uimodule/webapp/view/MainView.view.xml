@@ -20,7 +20,7 @@
               style: 'short'
             }
         }" />
-          <Label text="Unix Date"/>
+          <Label text="Edm.Date"/>
           <Text text="{
             path: '/simpleDate',
             formatter: '.formatter.toUnixDate'
@@ -43,7 +43,7 @@
               style: 'short'
               }
           }" />
-          <Label text="Unix DateTime" />
+          <Label text="Edm.DateTime" />
           <Text text="{
             path: '/dateTime',
             formatter: '.formatter.toUnixDate'
