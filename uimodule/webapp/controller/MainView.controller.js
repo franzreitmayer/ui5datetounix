@@ -13,7 +13,7 @@ sap.ui.define([
         onInit: function() {
             var oJsonModel = new JSONModel({
                 "simpleDate": new Date((new Date()).toDateString()),
-                "dateTime": new Date()
+                "dateTime": new Date((new Date()).toString())
             });
             this.getView().setModel(oJsonModel);
         }
