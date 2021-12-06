@@ -16,6 +16,12 @@ sap.ui.define([
                 "dateTime": new Date((new Date()).toString())
             });
             this.getView().setModel(oJsonModel);
+        },
+
+        onPressLinkExample: function (oEvent) {
+            var sUrl = 'https://plnkr.co/edit/SncDyoNeeELK5P6H?open=lib%2Fscript.js&preview';
+            var oNewTab = window.open();
+            oNewTab.location.href = sUrl;
         }
     });
 });

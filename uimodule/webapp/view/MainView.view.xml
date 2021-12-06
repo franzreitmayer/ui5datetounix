@@ -7,7 +7,7 @@
     <pages>
       <Page title="{i18n>title}">
 		<headerContent>
-			<Button icon="sap-icon://action" tooltip="Example" text="Edm.Date example" />
+			<Button icon="sap-icon://action" tooltip="Example" text="Edm.Date example on Plunker" press="onPressLinkExample" />
 		</headerContent>
         <content>
           <form:SimpleForm
