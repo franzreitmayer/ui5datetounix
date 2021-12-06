@@ -28,6 +28,12 @@
             path: '/simpleDate',
             formatter: '.formatter.toUnixDate'
           }" />
+          <Label text="oData JSON Format" />
+          <Text text="/Date({
+            path: '/simpleDate',
+            formatter: '.formatter.toUnixDate'
+          })/" />
+
         </form:SimpleForm>
         <form:SimpleForm
           title="DateTime Input">
@@ -51,6 +57,11 @@
             path: '/dateTime',
             formatter: '.formatter.toUnixDate'
           }" />
+          <Label text="oData JSON Format" />
+          <Text text="/Date({
+            path: '/dateTime',
+            formatter: '.formatter.toUnixDate'
+          })/" />
       </form:SimpleForm>
         </content>
       </Page>
